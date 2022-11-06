@@ -1,0 +1,106 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.Phonebook {
+  min-width: 320px;
+  min-height: 580px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AddBtn,
+.DeleteBtn {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'JetBrains Mono', monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.AddBtn:focus,
+.DeleteBtn:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.AddBtn:hover,
+.DeleteBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.AddBtn:active,
+.DeleteBtn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.FormInput {
+  height: 30px;
+  font-size: 18px;
+}
+.Filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FilterInput {
+  height: 30px;
+  font-size: 18px;
+}
+.DeleteBtn {
+  width: 80px;
+  height: 20px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.ListItem {
+  display: flex;
+  gap: 10px;
+}
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
