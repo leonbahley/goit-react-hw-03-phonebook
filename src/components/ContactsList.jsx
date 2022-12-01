@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import css from './Phonebook.module.css';
+
 const ContactsList = ({ contacts, onClick }) => (
   <>
-    <ul className="List">
+    <ul className={css.List}>
       {contacts.map(({ id, name, number }) => (
-        <li className="ListItem" id={id} key={id}>
+        <li className={css.ListItem} id={id} key={id}>
           {name}: {number}
-          <button className="DeleteBtn" type="button" onClick={onClick}>
+          <button className={css.DeleteBtn} type="button" onClick={onClick}>
             Delete
           </button>
         </li>
@@ -13,4 +16,10 @@ const ContactsList = ({ contacts, onClick }) => (
     </ul>
   </>
 );
+
+ContactsList.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 export default ContactsList;
