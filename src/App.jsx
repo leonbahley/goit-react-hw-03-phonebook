@@ -28,11 +28,9 @@ export class App extends Component {
     );
   };
 
-  handleDelete = e => {
+  handleDelete = id => {
     this.setState({
-      contacts: this.state.contacts.filter(
-        contact => contact.id !== e.target.closest('li').id
-      ),
+      contacts: this.state.contacts.filter(contact => contact.id !== id),
     });
   };
 
